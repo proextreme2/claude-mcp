@@ -46,3 +46,11 @@ def load_json(path):
     import json
     with open(path) as f:
         return json.load(f)
+
+
+def format_output(data, pretty=False):
+    """format output data"""
+    import json
+    if pretty:
+        return json.dumps(data, indent=2)
+    return json.dumps(data)
