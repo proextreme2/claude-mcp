@@ -54,3 +54,8 @@ def format_output(data, pretty=False):
     if pretty:
         return json.dumps(data, indent=2)
     return json.dumps(data)
+
+
+def get_version():
+    """get current version"""
+    return "0.16.0"
