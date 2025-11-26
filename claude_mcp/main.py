@@ -87,3 +87,8 @@ def safe_process(func):
             print(f"error: {e}")
             return None
     return wrapper
+
+
+def get_version():
+    """get current version"""
+    return "0.20.0"
