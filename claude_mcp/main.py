@@ -72,3 +72,18 @@ def save_json(path, data):
     import json
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
+
+
+class ProcessingError(Exception):
+    """raised when processing fails"""
+    pass
+
+def safe_process(func):
+    """decorator for safe execution"""
+    def wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            print(f"error: {e}")
+            return None
+    return wrapper
