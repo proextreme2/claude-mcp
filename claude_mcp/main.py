@@ -65,3 +65,10 @@ def chunk_list(lst, size):
     """split list into chunks"""
     for i in range(0, len(lst), size):
         yield lst[i:i + size]
+
+
+def save_json(path, data):
+    """save data to json file"""
+    import json
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2)
