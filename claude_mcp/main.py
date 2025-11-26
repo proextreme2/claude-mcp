@@ -59,3 +59,9 @@ def format_output(data, pretty=False):
 def get_version():
     """get current version"""
     return "0.16.0"
+
+
+def chunk_list(lst, size):
+    """split list into chunks"""
+    for i in range(0, len(lst), size):
+        yield lst[i:i + size]
