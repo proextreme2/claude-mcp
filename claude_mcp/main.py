@@ -104,3 +104,8 @@ DEFAULTS = {
 def get_config(key: str, default=None):
     """get config value"""
     return DEFAULTS.get(key, default)
+
+
+def get_version():
+    """get current version"""
+    return "0.22.0"
