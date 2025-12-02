@@ -92,3 +92,15 @@ def safe_process(func):
 def get_version():
     """get current version"""
     return "0.20.0"
+
+
+# refactored in v21
+DEFAULTS = {
+    "timeout": 30,
+    "retries": 3,
+    "batch_size": 100,
+}
+
+def get_config(key: str, default=None):
+    """get config value"""
+    return DEFAULTS.get(key, default)
