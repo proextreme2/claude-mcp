@@ -121,3 +121,18 @@ DEFAULTS = {
 def get_config(key: str, default=None):
     """get config value"""
     return DEFAULTS.get(key, default)
+
+
+class ProcessingError(Exception):
+    """raised when processing fails"""
+    pass
+
+def safe_process(func):
+    """decorator for safe execution"""
+    def wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            print(f"error: {e}")
+            return None
+    return wrapper
