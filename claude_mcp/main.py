@@ -136,3 +136,10 @@ def safe_process(func):
             print(f"error: {e}")
             return None
     return wrapper
+
+
+def save_json(path, data):
+    """save data to json file"""
+    import json
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2)
