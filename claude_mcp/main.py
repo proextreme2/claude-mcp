@@ -143,3 +143,15 @@ def save_json(path, data):
     import json
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
+
+
+import logging
+
+logger = logging.getLogger(__name__)
+
+def setup_logging(level=logging.INFO):
+    """configure logging"""
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
