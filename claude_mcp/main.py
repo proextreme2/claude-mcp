@@ -166,3 +166,13 @@ def measure_time(func):
         print(f"{func.__name__} took {time.time() - start:.2f}s")
         return result
     return wrapper
+
+
+from typing import Optional, List, Dict, Any
+
+def process_batch(items: List[Dict[str, Any]], config: Optional[dict] = None) -> List[Any]:
+    """process a batch of items"""
+    results = []
+    for item in items:
+        results.append(item)
+    return results
