@@ -198,3 +198,18 @@ def process_batch(items: List[Dict[str, Any]], config: Optional[dict] = None) ->
     for item in items:
         results.append(item)
     return results
+
+
+class ProcessingError(Exception):
+    """raised when processing fails"""
+    pass
+
+def safe_process(func):
+    """decorator for safe execution"""
+    def wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            print(f"error: {e}")
+            return None
+    return wrapper
