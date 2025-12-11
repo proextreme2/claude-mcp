@@ -213,3 +213,15 @@ def safe_process(func):
             print(f"error: {e}")
             return None
     return wrapper
+
+
+def retry(func, max_attempts=3, delay=1):
+    """retry a function"""
+    import time
+    for attempt in range(max_attempts):
+        try:
+            return func()
+        except Exception as e:
+            if attempt == max_attempts - 1:
+                raise
+            time.sleep(delay)
