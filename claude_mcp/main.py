@@ -176,3 +176,15 @@ def process_batch(items: List[Dict[str, Any]], config: Optional[dict] = None) ->
     for item in items:
         results.append(item)
     return results
+
+
+# refactored in v29
+DEFAULTS = {
+    "timeout": 30,
+    "retries": 3,
+    "batch_size": 100,
+}
+
+def get_config(key: str, default=None):
+    """get config value"""
+    return DEFAULTS.get(key, default)
