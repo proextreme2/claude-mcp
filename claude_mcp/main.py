@@ -155,3 +155,14 @@ def setup_logging(level=logging.INFO):
         level=level,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     )
+
+
+def measure_time(func):
+    """decorator to measure execution time"""
+    import time
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        print(f"{func.__name__} took {time.time() - start:.2f}s")
+        return result
+    return wrapper
