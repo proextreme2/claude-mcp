@@ -225,3 +225,11 @@ def retry(func, max_attempts=3, delay=1):
             if attempt == max_attempts - 1:
                 raise
             time.sleep(delay)
+
+
+def format_output(data, pretty=False):
+    """format output data"""
+    import json
+    if pretty:
+        return json.dumps(data, indent=2)
+    return json.dumps(data)
