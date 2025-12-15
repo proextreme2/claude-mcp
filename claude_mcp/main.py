@@ -233,3 +233,10 @@ def format_output(data, pretty=False):
     if pretty:
         return json.dumps(data, indent=2)
     return json.dumps(data)
+
+
+def save_json(path, data):
+    """save data to json file"""
+    import json
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2)
