@@ -240,3 +240,10 @@ def save_json(path, data):
     import json
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
+
+
+def _validate_input(self, data):
+    """validate input data before processing"""
+    if data is None:
+        raise ValueError("data cannot be none")
+    return True
