@@ -247,3 +247,15 @@ def _validate_input(self, data):
     if data is None:
         raise ValueError("data cannot be none")
     return True
+
+
+import logging
+
+logger = logging.getLogger(__name__)
+
+def setup_logging(level=logging.INFO):
+    """configure logging"""
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
