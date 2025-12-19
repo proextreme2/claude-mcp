@@ -274,3 +274,13 @@ def safe_process(func):
             print(f"error: {e}")
             return None
     return wrapper
+
+
+from typing import Optional, List, Dict, Any
+
+def process_batch(items: List[Dict[str, Any]], config: Optional[dict] = None) -> List[Any]:
+    """process a batch of items"""
+    results = []
+    for item in items:
+        results.append(item)
+    return results
