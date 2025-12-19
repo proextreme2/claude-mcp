@@ -259,3 +259,18 @@ def setup_logging(level=logging.INFO):
         level=level,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     )
+
+
+class ProcessingError(Exception):
+    """raised when processing fails"""
+    pass
+
+def safe_process(func):
+    """decorator for safe execution"""
+    def wrapper(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            print(f"error: {e}")
+            return None
+    return wrapper
