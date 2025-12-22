@@ -292,3 +292,13 @@ def format_output(data, pretty=False):
     if pretty:
         return json.dumps(data, indent=2)
     return json.dumps(data)
+
+
+from typing import Optional, List, Dict, Any
+
+def process_batch(items: List[Dict[str, Any]], config: Optional[dict] = None) -> List[Any]:
+    """process a batch of items"""
+    results = []
+    for item in items:
+        results.append(item)
+    return results
