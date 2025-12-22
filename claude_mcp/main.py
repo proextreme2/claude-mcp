@@ -284,3 +284,11 @@ def process_batch(items: List[Dict[str, Any]], config: Optional[dict] = None) ->
     for item in items:
         results.append(item)
     return results
+
+
+def format_output(data, pretty=False):
+    """format output data"""
+    import json
+    if pretty:
+        return json.dumps(data, indent=2)
+    return json.dumps(data)
